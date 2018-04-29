@@ -1,23 +1,81 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>FriendFinder</title>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<!-- Latest compiled and minified CSS & JS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
-	<!-- Font Awesome Glyphicons -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <title>FRIENDS Survey!</title>
 
-	<!-- Chosen -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   
+
+ <style>
+ body {
+ 	width: 75%;
+	margin: 0px auto; 
+
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+ }
+
+ header {
+ 	height: 100px;
+ }
+
+ header > nav {
+ 	height: 100%;
+ }
+
+ main {
+ 	flex: 1 0 auto;
+ }
+
+ main h1 {
+ 	font-weight: bold;
+ }
+
+  main h2 {
+ 	font-weight: 300;
+ }
+
+ footer {
+	 background-color: beige;
+ }
+
+</style>
 
 </head>
 <body>
+
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<a href="/" class="navbar-brand" id="logo">Friend Finder</a>
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				  </button>
+				
+				  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+					  <li class="nav-item">
+						<a class="nav-link" href="/survey">Survey</a>
+					  </li>
+					  <li class="nav-item">
+						  <a class="nav-link" href="/api/friends">API Friends List</a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link" href="https://github.com/krdg1984/FriendFinder">GitHub Repo</a>
+						</li>
+					</ul>
+					<form class="form-inline my-2 my-lg-0">
+					  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+					  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+					</form>
+				  </div>
+				</nav>
 
 	<div class="container">
 
@@ -156,11 +214,16 @@
  Submit</button>
 
 		<hr>
-	    <footer class="footer">
-	      <div class="container">
-		        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/krdg1984/FriendFinder">GitHub Repo</a></p>
-	      </div>
-	    </footer>
+	    <footer id="main-footer" class="text-center p-4">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+								<p>Links</p>
+								<p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/krdg1984/FriendFinder">GitHub Repo</a></p>
+						</div>
+					</div>
+				</div>
+			</footer>
 
 	</div>
 
